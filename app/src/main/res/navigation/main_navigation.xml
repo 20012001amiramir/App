@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/enterFragment">
+
+    <navigation android:id="@+id/navigationHome"
+        app:startDestination="@id/homeFragment">
+
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.example.fu.ui.home.HomeFragment"
+            android:label="HomeFragment"
+            tools:layout="@layout/fragment_home" />
+
+        <action
+            android:id="@+id/action_navigationHome_to_cameraFragment"
+            app:destination="@id/cameraFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+
+        <action
+            android:id="@+id/action_navigationHome_to_diseaseDetailFragment"
+            app:destination="@id/diseaseDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+
+        <action
+            android:id="@+id/action_navigationHome_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+
+        <action
+            android:id="@+id/action_navigationHome_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+
+    </navigation>
+
+    <navigation android:id="@+id/navigationSearch"
+        app:startDestination="@id/searchFragment">
+        <fragment
+            android:id="@+id/searchFragment"
+            android:name="com.example.fu.ui.search.SearchFragment"
+            android:label="SearchFragment" />
+        <action
+            android:id="@+id/action_navigationSearch_to_diseaseDetailFragment"
+            app:destination="@id/diseaseDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+    </navigation>
+
+    <navigation android:id="@+id/navigationProfile"
+        app:startDestination="@id/profileFragment">
+
+        <fragment
+            android:id="@+id/profileFragment"
+            android:name="com.example.fu.ui.profile.ProfileFragment"
+            android:label="ProfileFragment"
+            tools:layout="@layout/fragment_profile"
+            />
+
+        <action
+            android:id="@+id/action_navigationProfile_to_profileEditFragment"
+            app:destination="@id/profileEditFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+    </navigation>
+
+    <navigation android:id="@+id/navigationBookmarks"
+        app:startDestination="@id/bookmarksFragment">
+        <fragment
+            android:id="@+id/bookmarksFragment"
+            android:name="com.example.fu.ui.bookmarks.BookmarksFragment"
+            android:label="BookmarksFragment" />
+        <action
+            android:id="@+id/action_navigationBookmarks_to_diseaseDetailFragment"
+            app:destination="@id/diseaseDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+    </navigation>
+
+    <navigation android:id="@+id/navigationArticles"
+        app:startDestination="@id/articlesFragment">
+        <fragment
+            android:id="@+id/articlesFragment"
+            android:name="com.example.fu.ui.articles.ArticlesFragment"
+            android:label="ArticlesFragment" />
+        <action
+            android:id="@+id/action_navigationArticles_articleDetailFragment"
+            app:destination="@id/articleDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+    </navigation>
+
+    <fragment
+        android:id="@+id/enterFragment"
+        android:name="com.example.fu.ui.enter.EnterFragment"
+        android:label="EnterFragment" >
+        <action
+            android:id="@+id/action_enterFragment_to_navigationHome"
+            app:destination="@id/navigationHome"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/main_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.fu.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_browserFragment"
+            app:destination="@id/browserFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+        <action
+            android:id="@+id/action_cameraFragment_to_diseaseDetailFragment"
+            app:destination="@id/diseaseDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/browserFragment"
+        android:name="com.example.fu.ui.browser.BrowserFragment"
+        android:label="BrowserFragment" />
+
+    <fragment
+        android:id="@+id/diseaseDetailFragment"
+        android:name="com.example.fu.ui.disease_detail.DiseaseDetailFragment"
+        android:label="DiseaseDetailFragment" >
+        <argument
+            android:name="diseaseId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.example.fu.ui.article_detail.ArticleDetailFragment"
+        android:label="ArticleDetailFragment" >
+        <argument
+            android:name="articleId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.example.fu.ui.profile_edit.ProfileEditFragment"
+        android:label="ProfileEditFragment" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.fu.ui.category.CategoryFragment"
+        android:label="CategoryFragment" >
+
+        <action
+            android:id="@+id/action_categoryFragment_to_diseaseDetailFragment"
+            app:destination="@id/diseaseDetailFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            />
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="start"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@id/imageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:backgroundTint="#3161AF2B"
+        android:background="@drawable/rounded_corners_12"
+        app:tint="#61AF2B"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_wheat_24" />
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCountOfDisease"
+            android:textColor="@color/light_secondary_text_color"
+            android:textAppearance="@style/TextAppearance.LabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="4 вида болезней" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"/>
+
+        <TextView
+            android:id="@+id/tvPlantName"
+            android:textAppearance="@style/TextAppearance.BodyLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Пшеница" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

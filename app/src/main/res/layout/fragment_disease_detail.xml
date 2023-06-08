@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            tools:title="Жёлтая ржавчина"
+            app:menu="@menu/disease_detail_menu"
+            app:titleTextAppearance="@style/TextAppearance.TitleLarge" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/nsvContainer"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:clipChildren="false"
+                android:clipToPadding="false" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="8dp"/>
+
+            <TextView
+                android:paddingVertical="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.HeadlineSmall"
+                android:text="@string/title_description" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/tvSource"
+                android:paddingVertical="8dp"
+                android:textColor="@color/light_tertiary_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.BodyMedium"
+                tools:text="Из Википедии - свободной энциклопедии" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:paddingVertical="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.BodyMedium"
+                tools:text="Желтая ржавчина, или полосатая ржавчина, получила свое название от появления полос желтого цвета, образующихся параллельно вдоль жилков каждой листовой пластинки. Эти желтые полосы на самом деле" />
+
+            <Button
+                android:id="@+id/btnReadMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textAppearance="@style/TextAppearance.LabelLarge"
+                style="@style/AppTheme.Button.TextButton"
+                android:text="@string/btn_read_more" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_marginVertical="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerColor="@color/light_divider_color"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="8dp"
+                        android:backgroundTint="#36B62020"
+                        android:background="@drawable/rounded_corners_12"
+                        app:tint="#B62020"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_death_24" />
+
+                    <LinearLayout
+                        android:paddingHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.LabelLarge"
+                            android:textColor="#B62020"
+                            android:text="@string/subtitle_danger" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="4dp"/>
+
+                        <TextView
+                            android:id="@+id/tvDanger"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.BodyMedium"
+                            tools:text="Маленькая" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="8dp"
+                        android:backgroundTint="#407C95E4"
+                        android:background="@drawable/rounded_corners_12"
+                        app:tint="#7C95E4"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_bug_24" />
+
+                    <LinearLayout
+                        android:paddingHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.LabelLarge"
+                            android:textColor="#7C95E4"
+                            android:text="@string/subtitle_type_of_disease" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="4dp"/>
+
+                        <TextView
+                            android:id="@+id/tvTypeOfDisease"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.BodyMedium"
+                            tools:text="Грибковая" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="8dp"
+                        android:backgroundTint="#31FFC701"
+                        android:background="@drawable/rounded_corners_12"
+                        app:tint="#FFC701"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_plant_v2_24" />
+
+                    <LinearLayout
+                        android:paddingHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.LabelLarge"
+                            android:textColor="#FFC701"
+                            android:text="@string/subtitle_symptoms" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="4dp"/>
+
+                        <TextView
+                            android:id="@+id/tvSymptoms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.BodyMedium"
+                            tools:text="Локальные" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="8dp"
+                        android:backgroundTint="#3161AF2B"
+                        android:background="@drawable/rounded_corners_12"
+                        app:tint="#61AF2B"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_pill_24" />
+
+                    <LinearLayout
+                        android:paddingHorizontal="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.LabelLarge"
+                            android:textColor="#61AF2B"
+                            android:text="@string/subtitle_type_of_treatment" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="4dp"/>
+
+                        <TextView
+                            android:id="@+id/tvTypeOfTreatment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.BodyMedium"
+                            tools:text="Фунгициды" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

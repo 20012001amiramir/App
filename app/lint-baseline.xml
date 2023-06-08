@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint Electric Eel | 2022.1.1 Patch 2">
+
+    <issue
+        id="JcenterRepositoryObsolete"
+        message="JCenter Maven repository is no longer receiving updates: newer library versions may be available elsewhere">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.bottomnavigation.BottomNavigationView`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\activity_main.xml"
+            line="10"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.floatingactionbutton.FloatingActionButton`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_dashboard.xml"
+            line="51"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.chip.ChipGroup`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="77"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `androidx.cardview.widget.CardView`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.textfield.TextInputEditText`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="37"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.textfield.TextInputEditText`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `androidx.cardview.widget.CardView`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.textfield.TextInputEditText`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="37"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.textfield.TextInputEditText`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.textfield.TextInputEditText`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="58"/>
+    </issue>
+
+    <issue
+        id="MissingClass"
+        message="Class referenced in the layout file, `com.google.android.material.chip.Chip`, was not found in the project or the libraries">
+        <location
+            file="src\main\res\layout\item_garbage_type.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="ScrollViewSize"
+        message="This com.google.android.material.chip.ChipGroup should use `android:layout_width=&quot;wrap_content&quot;`">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="81"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib-jdk7 than 1.8.0 is available: 1.8.10">
+        <location
+            file="build.gradle"/>
+    </issue>
+
+    <issue
+        id="LockedOrientationActivity"
+        message="Expecting `android:screenOrientation=&quot;unspecified&quot;` or `&quot;fullSensor&quot;` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="LockedOrientationActivity"
+        message="Expecting `android:screenOrientation=&quot;unspecified&quot;` or `&quot;fullSensor&quot;` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="SwitchIntDef"
+        message="Unexpected constant; expected one of: `RecyclerView.HORIZONTAL`, `RecyclerView.VERTICAL`">
+        <location
+            file="src\main\java\com\example\fu\ui\common\list\stickyheaders\StickyHeaderLinearLayoutManager.kt"
+            line="362"/>
+    </issue>
+
+    <issue
+        id="SwitchIntDef"
+        message="Unexpected constant; expected one of: `RecyclerView.HORIZONTAL`, `RecyclerView.VERTICAL`">
+        <location
+            file="src\main\java\com\example\fu\ui\common\list\stickyheaders\StickyHeaderLinearLayoutManager.kt"
+            line="402"/>
+    </issue>
+
+    <issue
+        id="SwitchIntDef"
+        message="Unexpected constant; expected one of: `RecyclerView.HORIZONTAL`, `RecyclerView.VERTICAL`">
+        <location
+            file="src\main\java\com\example\fu\ui\common\list\stickyheaders\StickyHeaderLinearLayoutManager.kt"
+            line="421"/>
+    </issue>
+
+    <issue
+        id="SwitchIntDef"
+        message="Unexpected constant; expected one of: `RecyclerView.HORIZONTAL`, `RecyclerView.VERTICAL`">
+        <location
+            file="src\main\java\com\example\fu\ui\common\list\stickyheaders\StickyHeaderLinearLayoutManager.kt"
+            line="438"/>
+    </issue>
+
+    <issue
+        id="SwitchIntDef"
+        message="Unexpected constant; expected one of: `RecyclerView.HORIZONTAL`, `RecyclerView.VERTICAL`">
+        <location
+            file="src\main\java\com\example\fu\ui\common\list\stickyheaders\StickyHeaderLinearLayoutManager.kt"
+            line="463"/>
+    </issue>
+
+    <issue
+        id="UseCompatLoadingForDrawables"
+        message="Use `ResourcesCompat.getDrawable()`">
+        <location
+            file="src\main\java\com\example\fu\ui\common\extention\RecyclerViewExtensions.kt"
+            line="11"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <location
+            file="src\main\java\com\example\fu\di\provider\AuthOkHttpProvider.kt"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <location
+            file="src\main\java\com\example\fu\util\ErrorHandler.kt"
+            line="28"/>
+    </issue>
+
+    <issue
+        id="LogNotTimber"
+        message="Using &apos;Log&apos; instead of &apos;Timber&apos;">
+        <location
+            file="src\main\java\com\example\fu\di\provider\OkHttpProvider.kt"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkClientTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="src\main\java\com\example\fu\util\UtilExtensions.kt"
+            line="104"/>
+    </issue>
+
+    <issue
+        id="TrustAllX509TrustManager"
+        message="`checkServerTrusted` is empty, which could cause insecure network traffic due to trusting arbitrary TLS/SSL certificates presented by peers">
+        <location
+            file="src\main\java\com\example\fu\util\UtilExtensions.kt"
+            line="110"/>
+    </issue>
+
+    <issue
+        id="CustomX509TrustManager"
+        message="Implementing a custom `X509TrustManager` is error-prone and likely to be insecure. It is likely to disable certificate validation altogether, and is non-trivial to implement correctly without calling Android&apos;s default implementation.">
+        <location
+            file="src\main\java\com\example\fu\util\UtilExtensions.kt"
+            line="103"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\example\fu\ui\common\extention\AdapterDelegateExtensions.kt"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\data\repository\AccountRepository.kt"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\interactor\AccoutInteractor.kt"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\home\AddGarbageDialogFragment.kt"
+            line="60"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\home\AddGarbageDialogViewModel.kt"
+            line="18"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\AppActivityViewModel.kt"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\AppActivityViewModel.kt"
+            line="13"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\data\repository\GarbageRepository.kt"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\home\HomeFragment.kt"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\home\HomeViewModel.kt"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <location
+            file="src\main\java\com\example\fu\data\json\LocalDateAdapter.kt"
+            line="14"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <location
+            file="src\main\java\com\example\fu\data\json\LocalDateAdapter.kt"
+            line="23"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <location
+            file="src\main\java\com\example\fu\data\json\LocalDateTimeAdapter.kt"
+            line="12"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 26">
+        <location
+            file="src\main\java\com\example\fu\data\json\LocalDateTimeAdapter.kt"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\data\persistent\LocalStorage.kt"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\data\persistent\LocalStorage.kt"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\enter\LoginFragment.kt"
+            line="26"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\enter\LoginViewModel.kt"
+            line="18"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\MainActivity.kt"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\MainActivity.kt"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\data\repository\OAuthRepository.kt"
+            line="14"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\data\repository\OAuthRepository.kt"
+            line="14"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\dashboard\ScanedGarbagesFragment.kt"
+            line="38"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 24">
+        <location
+            file="src\main\java\com\example\fu\ui\dashboard\ScanedGarbagesViewModel.kt"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\interactor\SessionInteractors.kt"
+            line="12"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\interactor\SessionInteractors.kt"
+            line="12"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is never &lt; 23">
+        <location
+            file="src\main\java\com\example\fu\ui\common\list\stickyheaders\StickyHeaderLinearLayoutManager.kt"
+            line="345"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\data\network\interceptor\TokenAuthenticator.kt"
+            line="19"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        message="Unnecessary; SDK_INT is always >= 23">
+        <location
+            file="src\main\java\com\example\fu\data\network\interceptor\TokenAuthenticator.kt"
+            line="19"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@drawable/screen__forest` with a theme that also paints a background (inferred theme is `@style/Theme.Fu`)">
+        <location
+            file="src\main\res\layout\fragment_main_enter.xml"
+            line="6"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@android:color/holo_green_light` with a theme that also paints a background (inferred theme is `@style/Theme.Fu`)">
+        <location
+            file="src\main\res\layout\item_garbage.xml"
+            line="10"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.bg_selector_for_chip` appears to be unused">
+        <location
+            file="src\main\res\color\bg_selector_for_chip.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.bottom_nav_icon_color_selector` appears to be unused">
+        <location
+            file="src\main\res\drawable\bottom_nav_icon_color_selector.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.corner_radius_default` appears to be unused">
+        <location
+            file="src\main\res\values\dimens.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.corner_radius_small` appears to be unused">
+        <location
+            file="src\main\res\values\dimens.xml"
+            line="3"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_dashboard_black_24dp` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_dashboard_black_24dp.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_home_black_24dp` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_home_black_24dp.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_notifications_black_24dp` appears to be unused">
+        <location
+            file="src\main\res\drawable\ic_notifications_black_24dp.xml"
+            line="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.TextAppearance_SchoolBoy_Header_H2` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="15"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.TextAppearance_SchoolBoy_Text` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.TextAppearance_SchoolBoy_TextSmall` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.TextAppearance_SchoolBoy_TextSmallest` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="35"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.TextAppearance_SchoolBoy_ToolbarTitle` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="39"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.TextAppearance_SchoolBoy_ExpandedToolbarTitle` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="43"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Widget_SchoolBoy_TextView` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="47"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Widget_SchoolBoy_TextView_Medium` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="51"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Widget_SchoolBoy_TextView_Clickable` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="55"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Widget_SchoolBoy_TextView_Header` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="59"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Widget_SchoolBoy_TextView_Title` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="63"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Widget_SchoolBoy_TextView_Title_Secondary` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="67"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Widget_SchoolBoy_TextView_Subtitle` appears to be unused">
+        <location
+            file="src\main\res\values\typography.xml"
+            line="71"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="src\main\res\mipmap-anydpi-v26\ic_launcher.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="MonochromeLauncherIcon"
+        message="The application adaptive roundIcon is missing a monochrome tag">
+        <location
+            file="src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml"
+            line="2"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/icon.jpg` in densityless folder">
+        <location
+            file="src\main\res\drawable\icon.jpg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/screen__forest.png` in densityless folder">
+        <location
+            file="src\main\res\drawable\screen__forest.png"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="61"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        message="This text field does not specify an `inputType`">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="97"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="61"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="88"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="97"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_dashboard.xml"
+            line="51"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="16"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="40"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="7"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_main_enter.xml"
+            line="8"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Scanner&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\bottom_nav_menu.xml"
+            line="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Garbages&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\bottom_nav_menu.xml"
+            line="12"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Map&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\menu\bottom_nav_menu.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Тут пока что ничего нету&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_dashboard.xml"
+            line="29"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Adding garbage&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="37"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Name&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="67"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Barcode&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="93"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;🔎 Search Image&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_dialog_add_garbage.xml"
+            line="103"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Что то пошло не так кликни для рефреша&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_home.xml"
+            line="41"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Login&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Login&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="42"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Password&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="54"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Ok&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_login.xml"
+            line="71"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Login&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_main_enter.xml"
+            line="31"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Register&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_main_enter.xml"
+            line="45"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Register&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="20"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Login&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="42"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Password&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="54"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Password Repeat&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="64"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Ok&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\fragment_register.xml"
+            line="80"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Apple Gold&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\item_garbage.xml"
+            line="27"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Хорошое яблочко вкусное зеленое&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\item_garbage.xml"
+            line="39"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;4567189678123&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\item_garbage.xml"
+            line="50"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Piper, Plastic&quot;, should use `@string` resource">
+        <location
+            file="src\main\res\layout\item_garbage.xml"
+            line="62"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;32dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\fragment_dashboard.xml"
+            line="57"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        message="Consider replacing `android:layout_marginRight` with `android:layout_marginEnd=&quot;32dp&quot;` to better support right-to-left layouts">
+        <location
+            file="src\main\res\layout\fragment_dashboard.xml"
+            line="57"/>
+    </issue>
+
+</issues>

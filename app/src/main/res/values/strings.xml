@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false">WheatSeed</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="let_s_heal_a_crop_with_us">Let’s Heal-a-Crop\nwith us</string>
+    <string name="let_s_">Healthy Plants\nBountiful Harvests!</string>
+    <string name="title_my_plants">My plants</string>
+    <string name="title_bookmarks">Bookmarks</string>
+    <string name="title_description">Description</string>
+    <string name="title_identify_the_disease">Identify the disease</string>
+    <string name="title_plant_is_healthy">Plant is absolutely healthy</string>
+    <string name="title_try_to_find_manually">Try to find the disease manually</string>
+    <string name="title_articles">Articles</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_edit">Edit</string>
+
+    <string name="hint_search">Search</string>
+    <string name="hint_name">Name</string>
+
+    <string name="btn_scan_the_disease">Scan the disease</string>
+    <string name="btn_view_all">View all</string>
+    <string name="btn_read_more">Read more</string>
+    <string name="btn_save_disease">Save disease</string>
+    <string name="btn_remove_disease">Remove disease</string>
+    <string name="btn_change_photo">Change photo</string>
+
+    <string name="subtitle_frequent_disease">Frequent disease</string>
+    <string name="subtitle_categories">Categories</string>
+    <string name="subtitle_news">News</string>
+    <string name="subtitle_type_of_treatment">Type of treatment</string>
+    <string name="subtitle_type_of_disease">Type of disease</string>
+    <string name="subtitle_danger">Danger</string>
+    <string name="subtitle_symptoms">Symptoms</string>
+    <string name="subtitle_count_of_diseases">%s types of diseases</string>
+
+    <string name="subtitle_disease_identified">Hooray, we were able to identify the disease!</string>
+    <string name="subtitle_disease_not_found_negative">Unfortunately, we were unable to identify the disease</string>
+    <string name="subtitle_disease_not_found_positive">Hooray, we didn\'t find any diseases!</string>
+    
+    <string name="menu_add">Add</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_articles">Articles</string>
+    <string name="menu_bookmarks">Bookmarks</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_bookmark">Bookmark</string>
+
+    <string name="placeholder_empty">It seems to be empty here…</string>
+    <string name="placeholder_bookmarks">Your bookmarks will be displayed here</string>
+
+</resources>

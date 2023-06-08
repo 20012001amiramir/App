@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.BottomNavigationBar" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/light_background</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.LabelMedium</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.LabelMedium</item>
+        <item name="elevation">4dp</item>
+        <item name="itemIconTint">@drawable/bottom_navigation_active_indicator_selector</item>
+        <item name="itemActiveIndicatorStyle">@android:color/transparent</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextColor">@drawable/bottom_navigation_active_indicator_selector</item>
+    </style>
+
+    <style name="AppTheme.Button.Tonal" parent="Widget.Material3.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:padding">12dp</item>
+        <item name="backgroundTint">@color/light_secondary_color</item>
+        <item name="iconTint">@color/light_primary_color</item>
+        <item name="android:textColor">@color/light_primary_color</item>
+    </style>
+
+    <style name="AppTheme.Button.Filled" parent="Widget.Material3.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:padding">12dp</item>
+        <item name="backgroundTint">@color/light_primary_color</item>
+        <item name="iconTint">@color/light_background</item>
+        <item name="android:textColor">@color/light_background</item>
+    </style>
+
+    <style name="AppTheme.Button.TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:padding">12dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:textColor">@color/light_primary_color</item>
+        <item name="iconTint">@color/light_primary_color</item>
+    </style>
+
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

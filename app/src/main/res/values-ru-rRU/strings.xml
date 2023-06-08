@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_home">Дом</string>
+    <string name="title_my_plants">Мои растения</string>
+    <string name="title_bookmarks">Закладки</string>
+    <string name="title_description">Описание</string>
+    <string name="title_identify_the_disease">Идентифицровать болезнь</string>
+    <string name="title_plant_is_healthy">Растение абсолютно здорово</string>
+    <string name="title_try_to_find_manually">Попробуйте найти болезнь вручную</string>
+    <string name="title_articles">Статьи</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_edit">Редактировать</string>
+
+    <string name="hint_search">Поиск</string>
+    <string name="hint_name">Имя</string>
+
+    <string name="btn_scan_the_disease">Отсканировать болезнь</string>
+    <string name="btn_view_all">Посмотерть все</string>
+    <string name="btn_read_more">Подробнее</string>
+    <string name="btn_save_disease">Сохранить болезнь</string>
+    <string name="btn_remove_disease">Удалить болезнь</string>
+    <string name="btn_change_photo">Изменить фото</string>
+
+    <string name="subtitle_frequent_disease">Частые заболевания</string>
+    <string name="subtitle_categories">Категории</string>
+    <string name="subtitle_news">Новости</string>
+    <string name="subtitle_type_of_treatment">Вид лечения</string>
+    <string name="subtitle_type_of_disease">Тип болезни</string>
+    <string name="subtitle_danger">Опасность</string>
+    <string name="subtitle_symptoms">Симптомы</string>
+    <string name="subtitle_disease_identified">Ура, мы смогли определить болезнь!</string>
+    <string name="subtitle_disease_not_found_negative">К сожалению, мы не смогли определить болезнь</string>
+    <string name="subtitle_disease_not_found_positive">Ура, мы не нашли болезней!</string>
+    <string name="subtitle_count_of_diseases">%s вида болезней</string>
+
+    <string name="menu_add">Добавить</string>
+    <string name="menu_home">Дом</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_articles">Статьи</string>
+    <string name="menu_bookmarks">Закладки</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_edit">Редактировать</string>
+    <string name="menu_bookmark">Закладки</string>
+
+    <string name="placeholder_empty">Кажется здесь пусто…</string>
+    <string name="placeholder_bookmarks">Здесь будут отображаться ваши закладки</string>
+
+</resources>

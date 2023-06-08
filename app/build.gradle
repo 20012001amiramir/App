@@ -1,0 +1,309 @@
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-kapt"
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: "kotlin-parcelize"
+
+
+android {
+
+    aaptOptions {
+        noCompress "tflite"
+        noCompress "lite"
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.wheat.recognition"
+        minSdkVersion 23
+        versionCode = 500160
+        versionName '0.1'
+        targetSdkVersion 33
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    signingConfigs {
+        sign { //это конфиг для любых подписей, ключи будут подсовываться извне
+            storeFile file(System.properties['key_file'] ?: "/")
+            storePassword System.properties['store_password']
+            keyAlias System.properties['key_alias']
+            keyPassword System.properties['key_password']
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+
+            debuggable true
+
+            ext {
+                trustAllCertificates = true
+                hostName = "wheat"
+                serverApiUrl = "https://fu-arch.herokuapp.com"
+                authApiUrl = "https://fu-arch.herokuapp.com"
+                modelApiUrl = "http://77.91.77.242:69"
+                useMockApi = false
+            }
+
+            manifestPlaceholders.activityOrientation = "portrait"
+        }
+
+        forTestingMock {
+            minifyEnabled false
+            shrinkResources false
+
+            debuggable true
+
+            signingConfig signingConfigs.sign
+
+            ext {
+                trustAllCertificates = true
+                hostName = "wheat"
+                serverApiUrl = ""
+                authApiUrl = ""
+                useMockApi = true
+                supportEmail = ""
+                privacyPolicyLink = ""
+                psychologyLink = ""
+                backLogLink = ""
+            }
+
+            manifestPlaceholders.activityOrientation = "unspecified"
+        }
+
+        forTesting {
+            minifyEnabled false
+            shrinkResources false
+
+            debuggable true
+
+            signingConfig signingConfigs.sign
+
+
+            ext {
+                trustAllCertificates = true
+                hostName = "wheat"
+                serverApiUrl = ""
+                authApiUrl = ""
+                useMockApi = false
+                supportEmail = ""
+                privacyPolicyLink = ""
+                psychologyLink = ""
+                backLogLink = ""
+            }
+
+            manifestPlaceholders.activityOrientation = "portrait"
+        }
+
+        releaseCandidate {
+            minifyEnabled false
+            shrinkResources false
+
+            debuggable false
+
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+
+            signingConfig signingConfigs.sign
+
+            applicationIdSuffix = ".releaseCandidate"
+            versionNameSuffix "-rc"
+
+            ext {
+                trustAllCertificates = false
+                hostName = "wheat"
+                serverApiUrl = ""
+                authApiUrl = ""
+                useMockApi = false
+                supportEmail = ""
+                privacyPolicyLink = ""
+                psychologyLink = ""
+                backLogLink = ""
+            }
+
+            manifestPlaceholders.activityOrientation = "portrait"
+        }
+
+        release {
+
+
+            ext {
+                trustAllCertificates = true
+                hostName = "wheat"
+                serverApiUrl = "https://fu-arch.herokuapp.com"
+                authApiUrl = "https://fu-arch.herokuapp.com"
+                modelApiUrl = "http://77.91.77.242:69"
+                useMockApi = false
+            }
+
+            minifyEnabled false
+            shrinkResources false
+
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+
+            debuggable false
+
+
+            manifestPlaceholders.activityOrientation = "portrait"
+        }
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+
+    packagingOptions {
+        resources {
+            pickFirsts += ['META-INF/kotlinx-serialization-runtime.kotlin_module']
+        }
+    }
+    namespace 'com.example.fu'
+
+
+    applicationVariants.all { variant ->
+        def serverApiUrl = variant.buildType.ext.serverApiUrl
+        def authApiUrl = variant.buildType.ext.authApiUrl
+        def useMockApi = variant.buildType.ext.useMockApi
+        def trustAllCertificates = variant.buildType.ext.trustAllCertificates
+        def hostName = variant.buildType.ext.hostName
+
+
+        buildConfigField "String", "SERVER_API_URL", "\"$serverApiUrl/\""
+        buildConfigField "String", "HOSTNAME", "\"$hostName\""
+        buildConfigField "String", "AUTH_API_URL", "\"$authApiUrl\""
+        buildConfigField "Boolean", "USE_MOCK_API", "$useMockApi"
+        buildConfigField "Boolean", "TRUST_ALL_CERTIFICATES", trustAllCertificates.toString()
+
+    }
+}
+
+dependencies {
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
+
+    //kotlin libs
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+
+    //android libs
+    implementation "com.google.android.material:material:1.9.0"
+    implementation "androidx.core:core-ktx:1.10.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation "androidx.browser:browser:1.5.0"
+    implementation "androidx.security:security-crypto:1.1.0-alpha06"
+
+    //navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+    implementation 'androidx.databinding:databinding-common:8.0.1'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+
+    //di
+    def toothpickVersion = "3.1.0"
+    implementation "com.github.stephanenicolas.toothpick:ktp:${toothpickVersion}"
+    implementation "com.github.stephanenicolas.toothpick:smoothie-lifecycle-viewmodel-ktp:${toothpickVersion}"
+    implementation "com.github.stephanenicolas.toothpick:smoothie-lifecycle-ktp:${toothpickVersion}"
+    kapt "com.github.stephanenicolas.toothpick:toothpick-compiler:${toothpickVersion}"
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    //networking
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    implementation "com.squareup.okhttp3:okhttp:5.0.0-alpha.11"
+    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11"
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //json parser
+    implementation "com.squareup.moshi:moshi:1.14.0"
+    implementation "com.squareup.moshi:moshi-adapters:1.14.0"
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
+
+    //test
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+
+    //window insets
+//    def insetterVer = '0.3.1'
+//    implementation "dev.chrisbanes:insetter:$insetterVer"
+//    implementation "dev.chrisbanes:insetter-ktx:$insetterVer"
+
+    def adapterDelegateVer = '4.3.2'
+    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl:$adapterDelegateVer"
+    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$adapterDelegateVer"
+
+    //desugar
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
+
+    //calendar
+    implementation 'com.github.kizitonwose:CalendarView:0.4.4'
+
+    //logging
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    //view binding property delegate
+    //https://proandroiddev.com/make-android-view-binding-great-with-kotlin-b71dd9c87719
+    // reflection-based flavor
+    implementation 'com.github.kirich1409:viewbindingpropertydelegate-full:1.5.9'
+
+    //you can read about translations here - https://proandroiddev.com/change-language-programmatically-at-runtime-on-android-5e6bc15c758
+    implementation 'com.github.YarikSOffice:lingver:1.3.0'
+
+    //to show photo
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'io.github.nikartm:image-support:2.0.0'
+
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation "com.squareup.moshi:moshi-kotlin:1.14.0"
+
+    implementation "androidx.lifecycle:lifecycle-process:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-common:2.6.1"
+
+    implementation("io.coil-kt:coil:2.3.0")
+
+    implementation 'com.github.CanHub:Android-Image-Cropper:4.0.0'
+
+//    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+//    implementation 'org.tensorflow:tensorflow-android:1.13.1'
+//    implementation 'org.tensorflow:tensorflow-lite:2.2.0'
+
+    // CameraX
+    implementation "androidx.camera:camera-core:1.3.0-alpha06"
+    implementation "androidx.camera:camera-camera2:1.3.0-alpha06"
+    implementation "androidx.camera:camera-lifecycle:1.3.0-alpha06"
+    implementation 'androidx.camera:camera-view:1.3.0-alpha06'
+
+    implementation 'com.google.guava:guava:27.0.1-android'
+
+    // Pretty Time
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.4.Final'
+    // FAB Speed Dial
+    implementation "com.leinardi.android:speed-dial:3.3.0"
+
+
+}

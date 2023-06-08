@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TextAppearance.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="TextAppearance.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/light_primary_text_color</item>
+    </style>
+
+
+    <style name="TextAppearance.SchoolBoy.Base" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/golos_regular</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.Header" parent="TextAppearance.SchoolBoy.Base" />
+
+    <style name="TextAppearance.SchoolBoy.Header.H1">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.Header.H2">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.Header.H3">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.Header.H4">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.Text" parent="TextAppearance.SchoolBoy.Base">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.TextSmall" parent="TextAppearance.SchoolBoy.Base">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.TextSmallest" parent="TextAppearance.SchoolBoy.Base">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.ToolbarTitle" parent="TextAppearance.SchoolBoy.Header.H2">
+        <item name="android:fontFamily">@font/golos_medium</item>
+    </style>
+
+    <style name="TextAppearance.SchoolBoy.ExpandedToolbarTitle" parent="TextAppearance.SchoolBoy.Header.H1">
+        <item name="android:fontFamily">@font/golos_medium</item>
+    </style>
+
+    <style name="Widget.SchoolBoy.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.SchoolBoy.Text</item>
+    </style>
+
+    <style name="Widget.SchoolBoy.TextView.Medium">
+        <item name="android:fontFamily">@font/golos_medium</item>
+    </style>
+
+    <style name="Widget.SchoolBoy.TextView.Clickable" parent="Widget.SchoolBoy.TextView.Medium">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="Widget.SchoolBoy.TextView.Header" parent="Widget.SchoolBoy.TextView.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.SchoolBoy.Header.H2</item>
+    </style>
+
+    <style name="Widget.SchoolBoy.TextView.Title" parent="Widget.SchoolBoy.TextView.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.SchoolBoy.Header.H1</item>
+    </style>
+
+    <style name="Widget.SchoolBoy.TextView.Title.Secondary" parent="Widget.SchoolBoy.TextView.Medium">
+        <item name="android:textAppearance">@style/TextAppearance.SchoolBoy.Header.H3</item>
+    </style>
+
+    <style name="Widget.SchoolBoy.TextView.Subtitle">
+        <item name="android:textAppearance">@style/TextAppearance.SchoolBoy.Header.H4</item>
+    </style>
+
+
+</resources>

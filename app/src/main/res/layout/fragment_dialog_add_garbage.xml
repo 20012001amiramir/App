@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:backgroundTint="@color/white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@id/okey"
+            app:layout_constraintStart_toEndOf="@id/close"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Adding garbage"
+            />
+
+        <ImageView
+            android:id="@+id/okey"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_check_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@android:color/darker_gray" />
+
+        <ProgressBar
+            android:id="@+id/proggressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/okey"
+            app:layout_constraintLeft_toLeftOf="@id/okey"
+            app:layout_constraintRight_toRightOf="@id/okey"
+            app:layout_constraintBottom_toBottomOf="@id/okey"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:layout_marginTop="32dp"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Name"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/top"
+            />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/typesParent"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <com.google.android.material.chip.ChipGroup
+                android:theme="@style/Theme.MaterialComponents.Light"
+                android:id="@+id/types"
+                app:singleSelection="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+        </HorizontalScrollView>
+
+        <EditText
+            android:id="@+id/barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Barcode"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/typesParent"
+            />
+        <EditText
+            android:id="@+id/imageSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center"
+            android:hint="🔎 Search Image"
+            app:layout_constraintTop_toBottomOf="@id/barcode"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photoFromSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imageSearch"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

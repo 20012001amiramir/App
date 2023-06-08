@@ -1,0 +1,37 @@
+package com.example.fu.di
+
+// TODO: Do not this manually, replace it with generated scope name.
+object Scopes {
+
+    const val APP_SCOPE = "APP_SCOPE"
+
+    const val APP_ACTIVITY_SCOPE = "APP_ACTIVITY_SCOPE"
+
+    const val SCHEDULE_TAB_SCOPE = "SCHEDULE_TAB_SCOPE"
+
+    const val ONBOARDING_SCOPE = "ONBOARDING_SCOPE"
+
+    const val LOGIN_SCOPE = "LOGIN_SCOPE"
+
+    const val LESSON_SCOPE = "LESSON_SCOPE"
+
+    const val HOMEWORK_TAB_SCOPE = "HOMEWORK_TAB_SCOPE"
+
+    const val HOMEWORK_DAY_DIALOG_SCOPE = "HOMEWORK_DAY_DIALOG_SCOPE"
+
+    const val PROFILE_STORY_IMAGE_DOWNLOAD = "PROFILE_STORY_IMAGE_DOWNLOAD"
+
+    const val HOMEWORK_ARCHIVE_SCOPE = "HOMEWORK_ARCHIVE_SCOPE"
+
+    const val ADD_GARBAGE = "ADD_GARBAGE"
+
+    const val PROFILE_STORY_ARCHIVE_SCOPE = "PROFILE_STORY_ARCHIVE_SCOPE"
+
+    const val PROFILE_STORY_DETAIL_SCOPE = "PROFILE_STORY_DETAIL_SCOPE"
+
+    const val SETTINGS_SCOPE = "SETTINGS_SCOPE"
+
+    const val DIGEST_SCOPE = "DIGEST_SCOPE"
+
+    const val ACHIEVEMENT_SCOPE = "ACHIEVEMENT_SCOPE"
+}
